@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+ 	background-color:rgb(108,133,177);
+ 	height: 50px;
+ 	width: 100%;
+	font-size: 10pt;
+}
+
+.header h2{
+	display:inline;
+}
+
+.header h3{
+	display:inline;
+}
+
+.logo{
+	position:absolute;
+	top:8px;
+	left:5px;
+}
+
+.words{
+	color:white;
+	position:absolute;
+	top:18px;
+	left:60px;
+	height: 50px;
+	width:50%;
+}
+
+.login{
+	color:white;
+	float:right;
+	height: 50px;
+	width:5%;
+}
+
+.picturemainpage{
+	float:left;
+	width:50%;
+}
+
+.floatingBox{
+	position:absolute;
+	text-align: right;
+	color:white;	
+	height:400px;
+	width: 350px;
+	left:250px;
+	top:150px;
+}
+
+.floatingBox2{
+	position:absolute;
+	text-align: left;
+	color:white;	
+	height:400px;
+	width: 350px;
+	left:670px;
+	top:280px;
+}
+
+.button{
+	border: none;
+    color:white;
+    background-color:rgb(108,133,177);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	transition-duration: 0.4s;
+	border-radius: 4px;
+}
+
+.button:hover{
+	background-color: white; /* Green */
+  	color: rgb(108,133,177);
+}
+
+.button2{
+	align:right;
+	border: none;
+	background-color:rgb(108,133,177);
+	transition-duration: 0.4s;
+}
+
+.button2:hover{
+	background-color: rgba(255,255,255,0.54) /* Green */
+}
