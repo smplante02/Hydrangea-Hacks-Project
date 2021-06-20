@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find a Pet!</title>
+<link href="slider.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class = "header">
+		
+		<div class = "logo">
+			<img src="logo.png" height="50px" width="50px">
+			</div>
+		<div class = "words">
+			
+			<h2>
+				<span style="font-family:Arial Black"> 		Fur-Ever Friends
+				</span>
+			</h2>
+			<h3>
+				<span style="font-family:Arial"> 
+					<i>
+						Connecting shelter animals with people who love them
+						</i>
+				</span>
+			</h3>
+			</div>
+		
+		<div class = "selection bar">
+			<div class = "login">
+				<a href="./signin.html"> 
+					<button class="button2"><center>
+						<img src="sign in.png" width="50px" height="50px">
+					</center></button></a>
+			</div>
+			<div class = "login">
+				<a href="./index.html">
+					<button class="button2"><center>
+						<img src="home.png" width="50px" height="50px">
+					</center></button></a>
+			</div>
+			
+		</div>
+	</div>	
+	
+	<div class="spacer"></div>
+	
+	<div class="wrap">
+		<div id="slider">
+			<div class = "slide slide1 dog">
+				<div class="slide-content">
+					<span>
+						Image 1
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="my-popup">
+		<center>Select Pet Type(s):</center>
+		<div id="form" method="get">
+			<input type="checkbox" id="dog" name="dog" value="Dog">
+			<label for="dog">Dogs</label><br>
+			<input type="checkbox" id="cat" name="cat" value="Cat">
+			<label for="cat">Cats</label><br>
+			<input type="checkbox" id="reptile" name="reptile" value="Reptile">
+			<label for="cat">Reptiles</label><br>
+		</div>
+		<div id="continue-button">
+			<center><button id="close-btn" class="button">Continue</button></center>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script src="./popup.js"></script>
+	<script src="./teseter.js"></script>
+	<script>
+		//for slideshow
+		let sliderImages = document.querySelectorAll(".slide"),
+  			arrowLeft = document.querySelector("#arrow-left"),
+			arrowRight = document.querySelector("#arrow-right"),
+			current = 0;
+
+		// Clear all images
+		function reset() {
+  			for (let i = 0; i < sliderImages.length; i++) {
+				sliderImages[i].style.display = "none";
+			}
+		}
+
+		// Init slider
+		function startSlide() {
+			reset();
+			sliderImages[0].style.display = "block";
+		}
+
+		// Show prev
+		function slide(val) {
+  			reset();
+  			if(val===-1)
+  				current--;
+			else
+				current++;
+			sliderImages[current].style.display = "block";
+		}
+
+		// Left arrow click
+		arrowLeft.addEventListener("click", function() {
+  			if (current === 0) {
+				current = sliderImages.length;
+  			}
+			slide(-1);
+		});
+
+		// Right arrow click
+		arrowRight.addEventListener("click", function() {
+  			if (current === sliderImages.length - 1) {
+				current = -1;
+			}
+			slide(0);
+		});
+
+		startSlide();
+		
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.header {
+ 	background-color:rgb(108,133,177);
+ 	height: 50px;
+ 	width: 100%;
+	font-size: 10pt;
+}
+
+.header h2{
+	display:inline;
+}
+
+.header h3{
+	display:inline;
+}
+
+.logo{
+	position:absolute;
+	top:8px;
+	left:5px;
+}
+
+.slide1{
+	background:url("./pets.jpg");
+}
+
+.words{
+	color:white;
+	position:absolute;
+	top:18px;
+	left:60px;
+	height: 50px;
+	width:50%;
+}
+
+.login{
+	color:white;
+	float:right;
+	height: 50px;
+	width:5%;
+}
+
+.button{
+	cursor:pointer;
+	border: none;
+    color:white;
+    background-color:rgb(108,133,177);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+	transition-duration: 0.4s;
+	border-radius: 4px;
+}
+
+.button:hover{
+	background-color: white; /* Green */
+  	color: rgb(108,133,177);
+}
+
+.button2{
+	cursor:pointer;
+	align: right;
+	border: none;
+	background-color:rgb(108,133,177);
+	transition-duration: 0.4s;
+}
+
+.button2:hover{
+	background-color: rgba(255,255,255,0.54) /* Green */
+}
+
+
+/*for slider thing*/
+.body, #slider, .wrap, .slide-content{
+	margin:0px;
+	padding:0px;
+	font-family:Arial;
+	width:100%;
+	height:100vh;
+	overflow-x:hidden;
+}
+
+.wrap{
+	position:relative;
+}
+
+.slide{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+.slide-content{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+
+.slide-content span{
+	font-size:5rem;
+	color:orange;
+}
+
+.arrow{
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	margin-top:-30px;
+	width:0;
+	height:0;
+	border-style:solid;
+}
+
+#arrow-left{
+	border-width:30px 40px 30px 0;
+	border-color:transparent white transparent transparent;
+	left:0;
+	margin-left:30px;
+}
+
+#arrow-right{
+	border-width:30px 0 30px 40px;
+	border-color:transparent transparent transparent white;
+	right:0;
+	margin-right:30px;
+}
+
+/*for popup*/
+#my-popup{
+	font-family:Arial Black;
+	font-size:25px;
+	width: 400px;
+	height: 250px;
+	background:white;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-top:20px;
+	border-radius: 4px;
+
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+	display:block;
+}
+
+#form{
+	font-family:Arial;
+	font-size:20px;
+	position:relative;
+	left:27%;
+	margin:20px;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+

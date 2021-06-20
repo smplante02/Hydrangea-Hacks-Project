@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 .header {
  	background-color:rgb(108,133,177);
@@ -38,31 +37,6 @@
 	width:5%;
 }
 
-.picturemainpage{
-	float:left;
-	width:50%;
-}
-
-.floatingBox{
-	position:absolute;
-	text-align: right;
-	color:white;	
-	height:400px;
-	width: 350px;
-	left:250px;
-	top:150px;
-}
-
-.floatingBox2{
-	position:absolute;
-	text-align: left;
-	color:white;	
-	height:400px;
-	width: 350px;
-	left:670px;
-	top:280px;
-}
-
 .button{
 	cursor:pointer;
 	border: none;
@@ -93,36 +67,60 @@
 	background-color: rgba(255,255,255,0.54) /* Green */
 }
 
-.forms{
-	font-family: Arial;
-	z-index:2;
-	height:450px;
-	width:450px;
-	padding:30px;
-	border-radius:4px;
-	font-size:20px;
-	background:white;
-	position:absolute;
-	left:32%;
-	top:5%;
-	line-height:35px;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-}
 
-.backgrounds{
-	z-index: 1;
-	background:url("./cat.jpg");
-	position:absolute;
-	left:0;
-	top:0;
-	height:100%;
+/*for slider thing*/
+.body, #slider, .wrap, .slide-content{
+	margin:0px;
+	padding:0px;
+	font-family:Arial;
 	width:100%;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height:100vh;
+	overflow-x:hidden;
 }
 
-.formbutton{
+.wrap{
+	position:relative;
+}
+
+.slide{
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+.slide-content{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+
+.slide-content span{
+	font-size:5rem;
+	color:orange;
+}
+
+.arrow{
+	cursor:pointer;
 	position:absolute;
-	top:82%;
-	left:25%;
+	top:50%;
+	margin-top:-30px;
+	width:0;
+	height:0;
+	border-style:solid;
+}
+
+#arrow-left{
+	border-width:30px 40px 30px 0;
+	border-color:transparent rgb(108,133,177) transparent transparent;
+	left:15%;
+	margin-left:30px;
+}
+
+#arrow-right{
+	border-width:30px 0 30px 40px;
+	border-color:transparent transparent transparent rgb(108,133,177);
+	right:15%;
+	margin-right:30px;
 }
