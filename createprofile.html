@@ -2,11 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <h1>Create A Profile!</h1>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
   </head>
   <main>
-    <form>
-     <label for="animalType"><h2>Choose an animal type:</h2></label>
+    <div class ="backgrounds">
+    <div class="forms">
+      <center>
+   Create A Profile!
+    </center>
+    <form class = "form">
+     <label for="animalType">Choose an animal type:</label>
        <select id="animalType" name="animalType">
          <option value="dog">Dog</option>
          <option value="cat">Cat</option>
@@ -14,15 +20,15 @@
      </select>
      </form>
      <form>
-       <label for="animalName"><h2>What's the animal's name?</h2></label>
+       <label for="animalName">What's the animal's name?</label>
        <input type = "text" id = "animalName" name = "animalName">
     </form>
-    <form>
-     <label for = "age"><h2>How old is the animal?</h2></label>
+    <form class = "form">
+     <label for = "age">How old is the animal?</label>
       <input type = "text" id = "age" name = "age">
     </form>
-    <form>
-      <label for = "childFriendliness"><h2>Child Friendliness Rating (of 5)</h2></label>
+    <form class = "form">
+      <label for = "childFriendliness">Child Friendliness Rating (of 5)</label>
        <select id="childFriendliness" name="childFriendliness">
          <option value="one">1</option>
           <option value="two">2</option>
@@ -31,14 +37,17 @@
           <option value = "five">5</option>
       </select>
     </form>
-   <form>
-     <label for = "allergyFriendliness"><h2>Allergy Friendliness Rating (of 5)</h2></label>
+   <form class = "form">
+     <label for = "allergyFriendliness">Allergy Friendliness Rating (of 5)</label>
        <select id="allergyFriendliness" name="allergyFriendliness">
           <option value="one">1</option>
           <option value="two">2</option>
           <option value="three">3</option>
           <option value = "four">4</option>
           <option value = "five">5</option>
+     </select>
     </form>
+    </div>
+    </div>
   </main>
 </html>
